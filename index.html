@@ -6023,6 +6023,18 @@ html.splash-on,html[data-theme="light"].splash-on,html[data-theme="dark"].splash
        <svg width="16" height="16" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M7 16l4-5 3 3 5-7"/><path d="M15 7h4v4"/></svg>
        <span>Müşteri Analizleri</span>
       </div>
+<div class="sidebar-item" data-page="tab-tv-form" onclick="navTo(this)">
+       <svg width="16" height="16" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+       <span>Müşteriye Teklif Ver</span>
+      </div>
+<div class="sidebar-item" data-page="tab-tv-list" onclick="navTo(this)">
+       <svg width="16" height="16" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+       <span>Teklifler</span>
+      </div>
+<div class="sidebar-item" data-page="tab-kampanyalar" onclick="navTo(this)">
+       <svg width="16" height="16" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"/><line x1="7" y1="7" x2="7.01" y2="7"/></svg>
+       <span>Kampanyalar</span>
+      </div>
       <div class="sidebar-item" data-page="tab-ziyaret-form" onclick="navTo(this)">
        <svg width="16" height="16" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21V8l9-5 9 5v13"/><path d="M9 21v-6h6v6"/><circle cx="12" cy="11" r="2"/></svg>
        <span>Ziyaret Formu</span>
@@ -6031,30 +6043,17 @@ html.splash-on,html[data-theme="light"].splash-on,html[data-theme="dark"].splash
        <svg width="16" height="16" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
        <span>Ziyaret Raporu</span>
       </div>
-     </div>  
-
-     <div class="sidebar-item" onclick="toggleSubMenuTeklifler(this)" data-parent="teklifler">
-      <svg width="20" height="20" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
-      <span>Teklifler</span>
-      <svg width="14" height="14" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="chevron ui-ml-auto"><polyline points="6 9 12 15 18 9"/></svg>
+     <div class="sidebar-item" data-page="tab-servis-talepleri" onclick="navTo(this)">
+      <svg width="16" height="16" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+      <span>Servis Talepleri</span>
+      <span id="ticket-badge" style="display:none;margin-left:auto;background:var(--color-danger-text);color:#fff;font-size:11px;font-weight:700;padding:1px 8px;border-radius:var(--radius-lg);"></span>
      </div>
+</div>
      <div class="sidebar-sub" id="sub-teklifler" style="display:none;">
-      <div class="sidebar-item" data-page="tab-tv-form" onclick="navTo(this)">
-       <svg width="16" height="16" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
-       <span>Müşteriye Teklif Ver</span>
-      </div>
-      <div class="sidebar-item" data-page="tab-tv-list" onclick="navTo(this)">
-       <svg width="16" height="16" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
-       <span>Teklifler</span>
-      </div>
-      <div class="sidebar-item" data-page="tab-kampanyalar" onclick="navTo(this)">
-       <svg width="16" height="16" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"/><line x1="7" y1="7" x2="7.01" y2="7"/></svg>
-       <span>Kampanyalar</span>
-      </div>
-      <div class="sidebar-item" data-page="tab-tedarikciler" onclick="navTo(this)">
-       <svg width="16" height="16" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
-       <span>Tedarikçiler</span>
-      </div>
+      
+      
+      
+      
      </div>
      <div class="sidebar-item" id="sidebar-ticari-toggle" onclick="toggleSubMenu6(this)" data-parent="ticari">
       <svg width="20" height="20" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg><span>Satış Yönetimi</span>
@@ -6079,11 +6078,20 @@ html.splash-on,html[data-theme="light"].splash-on,html[data-theme="dark"].splash
       <div class="sidebar-item" data-page="tab-tahsilat" data-perm="teklifler" onclick="navTo(this)">
        <svg width="16" height="16" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg><span>Tahsilatlar</span>
       </div>
+     <div class="sidebar-item" data-page="tab-sozlesmeler" onclick="navTo(this)">
+      <svg width="16" height="16" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="9" y1="15" x2="15" y2="15"/><path d="M9 11h1"/></svg>
+      <span>Sözleşmeler</span>
+      <span id="contract-badge" style="display:none;margin-left:auto;background:var(--palette-amber-500);color:#fff;font-size:11px;font-weight:700;padding:1px 8px;border-radius:var(--radius-lg);"></span>
      </div>
+</div>
 <div class="sidebar-item" onclick="sidebarAccordionToggle('sub-finans',this)" data-parent="finans"><svg width="20" height="20" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21h18M3 10h18M5 6l7-3 7 3M4 10v11M20 10v11M8 14v3M12 14v3M16 14v3"/></svg><span>Finans</span><svg width="14" height="14" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="chevron ui-ml-auto"><polyline points="6 9 12 15 18 9"/></svg></div>
 <div class="sidebar-sub" id="sub-finans" style="display:none;"><div class="sidebar-item" data-page="tab-fin-hesaplar" onclick="navTo(this)"><svg width="16" height="16" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21h18M3 10h18M5 6l7-3 7 3M4 10v11M20 10v11M8 14v3M12 14v3M16 14v3"/></svg><span>Kasa & Banka</span></div><div class="sidebar-item" data-page="tab-fin-giderler" onclick="navTo(this)"><svg width="16" height="16" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 2v20l2-1 2 1 2-1 2 1 2-1 2 1 2-1 2 1V2l-2 1-2-1-2 1-2-1-2 1-2-1-2 1Z"/><path d="M16 8H8M16 12H8M13 16H8"/></svg><span>Gider & Masraf</span></div><div class="sidebar-item" data-page="tab-fin-tedarikci" onclick="navTo(this)"><svg width="16" height="16" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12V7H5a2 2 0 0 1 0-4h14v4"/><path d="M3 5v14a2 2 0 0 0 2 2h16v-5"/><path d="M18 12a2 2 0 0 0 0 4h4v-4z"/></svg><span>Tedarikçi Borçları</span></div><div class="sidebar-item" data-page="tab-fin-ceksenet" onclick="navTo(this)"><svg width="16" height="16" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M6 10h6M6 14h9M17 10h1"/></svg><span>Çek & Senet</span></div></div>
 <div class="sidebar-item" onclick="sidebarAccordionToggle('sub-satinalma',this)" data-parent="satinalma"><svg width="20" height="20" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg><span>Satın Alma</span><svg width="14" height="14" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="chevron ui-ml-auto"><polyline points="6 9 12 15 18 9"/></svg></div>
-<div class="sidebar-sub" id="sub-satinalma" style="display:none;"><div class="sidebar-item" data-page="tab-sa-talep" onclick="navTo(this)"><svg width="16" height="16" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><rect x="8" y="2" width="8" height="4" rx="1"/></svg><span>Satın Alma Talepleri</span></div><div class="sidebar-item" data-page="tab-teklif-form" onclick="navTo(this)"><svg width="16" height="16" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg><span>Tedarikçi Teklif Girişi</span></div><div class="sidebar-item" data-page="tab-teklif-rapor" onclick="navTo(this)"><svg width="16" height="16" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3v18h18"/><path d="M18 17V9M13 17V5M8 17v-4"/></svg><span>Tedarikçi Teklif Raporları</span></div><div class="sidebar-item" data-page="tab-sa-siparis" onclick="navTo(this)"><svg width="16" height="16" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg><span>Satın Alma Siparişleri</span></div><div class="sidebar-item" data-page="tab-sa-malkabul" onclick="navTo(this)"><svg width="16" height="16" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg><span>Mal Kabul</span></div></div>
+<div class="sidebar-sub" id="sub-satinalma" style="display:none;">
+<div class="sidebar-item" data-page="tab-tedarikciler" onclick="navTo(this)">
+       <svg width="16" height="16" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+       <span>Tedarikçiler</span>
+      </div><div class="sidebar-item" data-page="tab-sa-talep" onclick="navTo(this)"><svg width="16" height="16" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><rect x="8" y="2" width="8" height="4" rx="1"/></svg><span>Satın Alma Talepleri</span></div><div class="sidebar-item" data-page="tab-teklif-form" onclick="navTo(this)"><svg width="16" height="16" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg><span>Tedarikçi Teklif Girişi</span></div><div class="sidebar-item" data-page="tab-teklif-rapor" onclick="navTo(this)"><svg width="16" height="16" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3v18h18"/><path d="M18 17V9M13 17V5M8 17v-4"/></svg><span>Tedarikçi Teklif Raporları</span></div><div class="sidebar-item" data-page="tab-sa-siparis" onclick="navTo(this)"><svg width="16" height="16" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg><span>Satın Alma Siparişleri</span></div><div class="sidebar-item" data-page="tab-sa-malkabul" onclick="navTo(this)"><svg width="16" height="16" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg><span>Mal Kabul</span></div></div>
 
      <div class="sidebar-item" onclick="toggleSubMenuStok(this)" data-parent="stok">
       <svg width="20" height="20" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
@@ -6207,16 +6215,8 @@ html.splash-on,html[data-theme="light"].splash-on,html[data-theme="dark"].splash
       <span>Onay Bekleyenler</span>
       <span id="approval-badge" class="sidebar-badge" style="display:none;"></span>
      </div>
-     <div class="sidebar-item" data-page="tab-servis-talepleri" onclick="navTo(this)">
-      <svg width="20" height="20" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
-      <span>Servis Talepleri</span>
-      <span id="ticket-badge" style="display:none;margin-left:auto;background:var(--color-danger-text);color:#fff;font-size:11px;font-weight:700;padding:1px 8px;border-radius:var(--radius-lg);"></span>
-     </div>
-     <div class="sidebar-item" data-page="tab-sozlesmeler" onclick="navTo(this)">
-      <svg width="20" height="20" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="9" y1="15" x2="15" y2="15"/><path d="M9 11h1"/></svg>
-      <span>Sözleşmeler</span>
-      <span id="contract-badge" style="display:none;margin-left:auto;background:var(--palette-amber-500);color:#fff;font-size:11px;font-weight:700;padding:1px 8px;border-radius:var(--radius-lg);"></span>
-     </div>
+     
+     
      <div class="sidebar-item" onclick="toggleSubMenu2(this)" data-parent="planning">  
       <svg width="20" height="20" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2" /><line x1="16" y1="2" x2="16" y2="6" /><line x1="8" y1="2" x2="8" y2="6" /><line x1="3" y1="10" x2="21" y2="10" />  
       </svg><span>Planlama</span>  
@@ -6326,13 +6326,14 @@ html.splash-on,html[data-theme="light"].splash-on,html[data-theme="dark"].splash
       <div class="sidebar-item" data-page="tab-backup" onclick="navToProtected(this,'backup')">
        <svg width="16" height="16" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"/><polyline points="17 21 17 13 7 13 7 21"/><polyline points="7 3 7 8 15 8"/></svg><span>Yedekleme</span>
       </div>
+<div class="sidebar-item" data-page="tab-activity" onclick="navTo(this)">
+      <svg width="16" height="16" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg><span>Aktivite Merkezi</span>
+     </div>
       <div class="sidebar-item" onclick="navToSettings('hakkinda',this)">
        <svg width="16" height="16" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg><span>Hakkında</span>
       </div>
      </div>
-     <div class="sidebar-item" data-page="tab-activity" onclick="navTo(this)">
-      <svg width="20" height="20" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg><span>Aktivite Merkezi</span>
-     </div>
+     
     </nav>  
     <div class="sidebar-bottom">  
      <span style="color:rgba(255,255,255,0.4);font-size:12px;">v3.0</span>  
@@ -7555,7 +7556,7 @@ html.splash-on,html[data-theme="light"].splash-on,html[data-theme="dark"].splash
 <div class="cl-empty" id="kr-empty"><div class="cl-empty-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><polyline points="20 6 9 17 4 12"/></svg></div><b id="kr-empty-title">Kritik seviyede ürün yok</b><p id="kr-empty-sub">Tüm ürünler minimum stok seviyesinin üzerinde.</p><button type="button" id="kr-empty-btn" onclick="hdrQuickNav('tab-stok-urunler')">Ürünlere Git</button></div>
 <div class="cl-pager" id="kr-pagination"></div>
 </div>
-<div class="mg-actions-wrap"><div class="mg-actions"><button type="button" class="mg-btn mg-btn-primary" onclick="satFromKritik()"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>Satın Alma Talebi</button><button type="button" class="mg-btn mg-btn-secondary" onclick="hdrQuickNav('tab-stok-giris')" ><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M5 21h14"/></svg>Stok Girişi</button><button type="button" class="mg-btn mg-btn-secondary" onclick="stExportKritik()" ><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><path d="m9 13 4 5M13 13l-4 5"/></svg>Excel</button></div></div>
+<div class="mg-actions-wrap"><div class="mg-actions"><button type="button" class="mg-btn mg-btn-primary" onclick="stlFromKritik()"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>Satın Alma Talebi</button><button type="button" class="mg-btn mg-btn-secondary" onclick="hdrQuickNav('tab-stok-giris')" ><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M5 21h14"/></svg>Stok Girişi</button><button type="button" class="mg-btn mg-btn-secondary" onclick="stExportKritik()" ><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><path d="m9 13 4 5M13 13l-4 5"/></svg>Excel</button></div></div>
 </div>
 </div>
     <div id="tab-stok-hareketler" class="tab-content">
@@ -7576,10 +7577,10 @@ html.splash-on,html[data-theme="light"].splash-on,html[data-theme="dark"].splash
 </div>
 </div>
     <div id="tab-stok-rapor" class="tab-content">
-     <div class="rp-page-head page-head">
-      <div class="rp-head-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M21 8 12 3 3 8l9 5 9-5Z"/><path d="M3 8v8l9 5 9-5V8"/><path d="M12 13v8"/></svg></div>
+     <div class="rp-page-head page-head"><div class="page-head-left">
+      <div class="rp-head-icon head-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M21 8 12 3 3 8l9 5 9-5Z"/><path d="M3 8v8l9 5 9-5V8"/><path d="M12 13v8"/></svg></div>
       <div><h1 class="rp-page-title page-title">Ürün Raporları</h1><p class="rp-page-sub page-sub">Ürünlerinizle ilgili detaylı raporları görüntüleyin.</p></div>
-     </div>
+     </div></div>
 
      <div class="rp-panel">
       <div class="rp-section-head"><div class="rp-section-head-left">
@@ -8123,7 +8124,7 @@ html.splash-on,html[data-theme="light"].splash-on,html[data-theme="dark"].splash
 
        <!-- LİSTE BAŞLIĞI -->
        <div class="cl-list-head">
-        <div class="cl-count" id="tk-total-label">0 teklif</div>
+        <div class="cl-count" id="tkr-total-label">0 teklif</div>
         <div class="cl-head-tools">
          <button type="button" class="cl-link-btn" id="tk-select-all" onclick="tkSelectAllVisible()">Tümünü seç</button>
          <div class="dropdown cl-export" id="tk-export-dropdown">
@@ -8141,11 +8142,11 @@ html.splash-on,html[data-theme="light"].splash-on,html[data-theme="dark"].splash
        <div class="cl-list" id="tk-proposals-list"></div>
 
        <!-- BOŞ DURUM -->
-       <div class="cl-empty" id="tk-empty">
+       <div class="cl-empty" id="tkr-empty">
         <div class="cl-empty-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg></div>
-        <b id="tk-empty-title">Henüz tedarikçi teklifi yok</b>
-        <p id="tk-empty-sub">Tedarikçilerden aldığınız teklifleri girdikçe burada raporlanır.</p>
-        <button type="button" id="tk-empty-btn" onclick="hdrQuickNav('tab-teklif-form')">İlk Teklifi Gir</button>
+        <b id="tkr-empty-title">Henüz tedarikçi teklifi yok</b>
+        <p id="tkr-empty-sub">Tedarikçilerden aldığınız teklifleri girdikçe burada raporlanır.</p>
+        <button type="button" id="tkr-empty-btn" onclick="hdrQuickNav('tab-teklif-form')">İlk Teklifi Gir</button>
        </div>
       </div>
 
@@ -9094,19 +9095,19 @@ html.splash-on,html[data-theme="light"].splash-on,html[data-theme="dark"].splash
 <div class="page mgc-page">
 <div class="page-head"><div class="page-head-left"><div class="head-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><rect x="8" y="2" width="8" height="4" rx="1"/></svg></div><div><h1 class="page-title">Satın Alma Talepleri</h1><p class="page-sub">İhtiyaçları talep olarak girin; onaylanan talepler tek tıkla siparişe dönüşür.</p></div></div></div>
 <div class="cl-stack">
-<div class="cl-kpi-grid" id="sat-kpi-grid"></div>
-<div class="mg-card mg-card-static " id="sat-form" style="display:none;"><div class="mg-card-head"><span class="mg-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><rect x="8" y="2" width="8" height="4" rx="1"/></svg></span><span class="mg-card-heading"><span class="mg-card-title">Yeni Satın Alma Talebi</span><span class="mg-card-count">Talep kaydedilince onaya gönderilir</span></span></div><div class="mg-card-body"><div><div class="mg-grid "><div class="mg-field"><label for="sat-f-kisi">Talep Eden<span class="mg-req">*</span></label><input class="mg-input" id="sat-f-kisi" type="text" placeholder="Ad soyad" autocomplete="off" ></div><div class="mg-field"><label for="sat-f-oncelik">Öncelik</label><div class="mg-select-wrap"><select class="mg-select" id="sat-f-oncelik" ><option value="normal">Normal</option><option value="acil">Acil</option><option value="dusuk">Düşük</option></select><svg class="mg-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></div></div><div class="mg-field mg-full"><label for="sat-f-gerekce">Gerekçe <span class="mg-optional">(İsteğe Bağlı)</span></label><input class="mg-input" id="sat-f-gerekce" type="text" placeholder="Neden gerekli?" autocomplete="off" ></div></div><div class="sy-card-in st-pt0"><div class="erp-lines"><div class="st-sub-head"><b>Kalemler</b><span id="sat-l-count">0 kalem</span></div><div class="mg-grid "><div class="mg-field mg-full"><label for="sat-l-urun">Ürün</label><input class="mg-input" id="sat-l-urun" type="text" placeholder="Ürün adı yazın…" autocomplete="off" list="sat-l-dl" oninput="erpLineHint('sat')"><datalist id="sat-l-dl"></datalist></div><div class="mg-field"><label for="sat-l-miktar">Miktar</label><input class="mg-input" id="sat-l-miktar" type="number" placeholder="0" autocomplete="off" min="0.01" step="0.01" inputmode="decimal"></div><div class="mg-field mg-full"><div class="st-info" id="sat-l-hint"></div></div></div><div class="erp-line-add"><button type="button" class="mg-btn mg-btn-secondary" onclick="erpLineAdd('sat')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>Kalemi Ekle</button></div><div class="sy-rows erp-line-list" id="sat-lines"></div><div class="erp-line-total" id="sat-l-total"></div></div></div><div class="cl-form-actions"><button type="button" class="mg-btn mg-btn-secondary" onclick="erpFormClose('sat')" >İptal</button><button type="button" class="mg-btn mg-btn-primary" onclick="satSave()" ><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><polyline points="20 6 9 17 4 12"/></svg>Talebi Oluştur</button></div></div></div></div>
+<div class="cl-kpi-grid" id="stl-kpi-grid"></div>
+<div class="mg-card mg-card-static " id="stl-form" style="display:none;"><div class="mg-card-head"><span class="mg-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><rect x="8" y="2" width="8" height="4" rx="1"/></svg></span><span class="mg-card-heading"><span class="mg-card-title">Yeni Satın Alma Talebi</span><span class="mg-card-count">Talep kaydedilince onaya gönderilir</span></span></div><div class="mg-card-body"><div><div class="mg-grid "><div class="mg-field"><label for="stl-f-kisi">Talep Eden<span class="mg-req">*</span></label><input class="mg-input" id="stl-f-kisi" type="text" placeholder="Ad soyad" autocomplete="off" ></div><div class="mg-field"><label for="stl-f-oncelik">Öncelik</label><div class="mg-select-wrap"><select class="mg-select" id="stl-f-oncelik" ><option value="normal">Normal</option><option value="acil">Acil</option><option value="dusuk">Düşük</option></select><svg class="mg-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></div></div><div class="mg-field mg-full"><label for="stl-f-gerekce">Gerekçe <span class="mg-optional">(İsteğe Bağlı)</span></label><input class="mg-input" id="stl-f-gerekce" type="text" placeholder="Neden gerekli?" autocomplete="off" ></div></div><div class="sy-card-in st-pt0"><div class="erp-lines"><div class="st-sub-head"><b>Kalemler</b><span id="stl-l-count">0 kalem</span></div><div class="mg-grid "><div class="mg-field mg-full"><label for="stl-l-urun">Ürün</label><input class="mg-input" id="stl-l-urun" type="text" placeholder="Ürün adı yazın…" autocomplete="off" list="stl-l-dl" oninput="erpLineHint('stl')"><datalist id="stl-l-dl"></datalist></div><div class="mg-field"><label for="stl-l-miktar">Miktar</label><input class="mg-input" id="stl-l-miktar" type="number" placeholder="0" autocomplete="off" min="0.01" step="0.01" inputmode="decimal"></div><div class="mg-field mg-full"><div class="st-info" id="stl-l-hint"></div></div></div><div class="erp-line-add"><button type="button" class="mg-btn mg-btn-secondary" onclick="erpLineAdd('stl')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>Kalemi Ekle</button></div><div class="sy-rows erp-line-list" id="stl-lines"></div><div class="erp-line-total" id="stl-l-total"></div></div></div><div class="cl-form-actions"><button type="button" class="mg-btn mg-btn-secondary" onclick="erpFormClose('stl')" >İptal</button><button type="button" class="mg-btn mg-btn-primary" onclick="stlSave()" ><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><polyline points="20 6 9 17 4 12"/></svg>Talebi Oluştur</button></div></div></div></div>
 <div class="cl-panel cl-toolbar">
-<div class="cl-search-row"><div class="cl-search-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg><input class="cl-search" id="sat-search" type="search" placeholder="Talep no, ürün veya talep eden ara…" autocomplete="off" oninput="satPage=1;satRender()"><button type="button" class="cl-search-clear" id="sat-search-clear" onclick="clClearSearch('sat-search',function(){satPage=1;satRender()})" aria-label="Aramayı temizle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6 6 18M6 6l12 12"/></svg></button></div><div class="cl-sort-wrap"><button type="button" class="cl-sort-btn" onclick="clToggleMenu(event,'sat-sort-menu')" aria-haspopup="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h13M3 12h9M3 18h5"/><path d="M18 8v12M15 17l3 3 3-3"/></svg><span id="sat-sort-label">Sırala</span></button><div class="cl-sort-menu" id="sat-sort-menu" role="menu"></div></div></div>
-<p class="cl-chip-label">Durum</p><div class="cl-chip-row" id="sat-durum-chips"></div>
-<input type="hidden" id="sat-ff-durum" value=""><input type="hidden" id="sat-sort" value="new"></div>
-<div class="cl-list-head"><div class="cl-count" id="sat-total-label">0 talep</div><label class="cl-per-page"><select id="sat-per-page" onchange="satPage=1;satRender()"><option value="10">10</option><option value="25">25</option><option value="50">50</option></select>kayıt / sayfa</label></div>
-<div class="cl-list" id="sat-list"></div>
-<div class="cl-empty" id="sat-empty"><div class="cl-empty-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><rect x="8" y="2" width="8" height="4" rx="1"/></svg></div><b id="sat-empty-title">Henüz talep yok</b><p id="sat-empty-sub">Stok ihtiyaçlarını satın alma talebi olarak girin.</p><button type="button" id="sat-empty-btn" onclick="satNew()">İlk Talebi Oluştur</button></div>
-<div class="cl-pager" id="sat-pagination"></div>
+<div class="cl-search-row"><div class="cl-search-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg><input class="cl-search" id="stl-search" type="search" placeholder="Talep no, ürün veya talep eden ara…" autocomplete="off" oninput="stlPage=1;stlRender()"><button type="button" class="cl-search-clear" id="stl-search-clear" onclick="clClearSearch('stl-search',function(){stlPage=1;stlRender()})" aria-label="Aramayı temizle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6 6 18M6 6l12 12"/></svg></button></div><div class="cl-sort-wrap"><button type="button" class="cl-sort-btn" onclick="clToggleMenu(event,'stl-sort-menu')" aria-haspopup="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h13M3 12h9M3 18h5"/><path d="M18 8v12M15 17l3 3 3-3"/></svg><span id="stl-sort-label">Sırala</span></button><div class="cl-sort-menu" id="stl-sort-menu" role="menu"></div></div></div>
+<p class="cl-chip-label">Durum</p><div class="cl-chip-row" id="stl-durum-chips"></div>
+<input type="hidden" id="stl-ff-durum" value=""><input type="hidden" id="stl-sort" value="new"></div>
+<div class="cl-list-head"><div class="cl-count" id="stl-total-label">0 talep</div><label class="cl-per-page"><select id="stl-per-page" onchange="stlPage=1;stlRender()"><option value="10">10</option><option value="25">25</option><option value="50">50</option></select>kayıt / sayfa</label></div>
+<div class="cl-list" id="stl-list"></div>
+<div class="cl-empty" id="stl-empty"><div class="cl-empty-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><rect x="8" y="2" width="8" height="4" rx="1"/></svg></div><b id="stl-empty-title">Henüz talep yok</b><p id="stl-empty-sub">Stok ihtiyaçlarını satın alma talebi olarak girin.</p><button type="button" id="stl-empty-btn" onclick="stlNew()">İlk Talebi Oluştur</button></div>
+<div class="cl-pager" id="stl-pagination"></div>
 
 </div>
-<div class="mg-actions-wrap"><div class="mg-actions"><button type="button" class="mg-btn mg-btn-primary" onclick="satNew()" ><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>Yeni Talep</button><button type="button" class="mg-btn mg-btn-secondary" onclick="hdrQuickNav('tab-sa-siparis')" ><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>Siparişler</button></div></div>
+<div class="mg-actions-wrap"><div class="mg-actions"><button type="button" class="mg-btn mg-btn-primary" onclick="stlNew()" ><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>Yeni Talep</button><button type="button" class="mg-btn mg-btn-secondary" onclick="hdrQuickNav('tab-sa-siparis')" ><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>Siparişler</button></div></div>
 </div>
 </div>
 <div id="tab-sa-siparis" class="tab-content">
@@ -12052,12 +12053,12 @@ function tkRenderProposalCards(){
  const q=clSearchState('tkr-search','tkr-search-clear');
  ['all','new','old'].forEach(k=>{const b=document.getElementById('tkf-'+k);if(b)b.classList.toggle('active',k===tkCurrentFilter);});
  const list=tkGetFiltered();
- const tl=document.getElementById('tk-total-label');
+ const tl=document.getElementById('tkr-total-label');
  if(tl)tl.innerHTML=list.length+' teklif'+(list.length!==tkProposals.length?' <span>/ '+tkProposals.length+' kayıt</span>':'');
- const empty=document.getElementById('tk-empty');
+ const empty=document.getElementById('tkr-empty');
  if(!list.length){
   el.innerHTML='';
-  clEmptyState('tk',tkProposals.length>0,{title:'Henüz tedarikçi teklifi yok',sub:'Tedarikçilerden aldığınız teklifleri girdikçe burada raporlanır.',btn:'İlk Teklifi Gir',
+  clEmptyState('tkr',tkProposals.length>0,{title:'Henüz tedarikçi teklifi yok',sub:'Tedarikçilerden aldığınız teklifleri girdikçe burada raporlanır.',btn:'İlk Teklifi Gir',
    reset:function(){const s=document.getElementById('tkr-search');if(s)s.value='';tkSetFilter('all');},action:function(){hdrQuickNav('tab-teklif-form');}});
   tkUpdateSelUi();return;
  }
@@ -24328,12 +24329,39 @@ html.is-touch.app-shell body{position:fixed;inset:0;width:100%}
 html.is-touch.app-shell #main-wrap{position:fixed !important;top:0;right:0;bottom:0;left:0;min-height:0 !important;height:auto !important;
  overflow-y:auto !important;overflow-x:hidden !important;-webkit-overflow-scrolling:touch;overscroll-behavior-y:contain;scroll-padding-top:calc(76px + env(safe-area-inset-top,0px));scroll-padding-bottom:96px}
 /* Durum çubuğu (çentik) altında içerik görünmesin: üstte sabit örtü */
-html.is-touch.app-shell body::before{content:"";position:fixed;left:0;right:0;top:0;height:env(safe-area-inset-top,0px);background:var(--bg);z-index:calc(var(--z-header,100) + 29);pointer-events:none}
 /* Kenar menü açıkken içerik kaymasın */
 html.is-touch.app-shell body.scroll-locked #main-wrap{overflow:hidden !important}
 /* Fatura bilgileri: 4 alan tam genişliğe yayılsın (auto-fit + tam satır adres boş sütun bırakıyordu) */
 @media (min-width:720px){#tab-customers-add .mg-grid.mg-cols-4{grid-template-columns:repeat(4,minmax(0,1fr)) !important;}}
 @media (min-width:420px) and (max-width:719.98px){#tab-customers-add .mg-grid.mg-cols-4{grid-template-columns:repeat(2,minmax(0,1fr)) !important;}}
+
+/* iOS ana ekran uygulaması (standalone) hatası: görünür alan ekrandan durum çubuğu kadar kısa bildiriliyor,
+   alta sabitlenen her şey (alt şerit, kenar menü, içerik, pencereler) ekranın dibine inmiyor. --vp-gap ile dibe indirilir. */
+html.vp-gap :is(#main-wrap,#sidebar,#sidebar .rs-bg,.rs-scrim,#sidebar-overlay,.sidebar-overlay,.modal-overlay,.barcode-overlay,.mg-actions-wrap,.pos-complete-bar,.ui-confirm-overlay,.uic-overlay,.cmdk-overlay){bottom:calc(-1 * var(--vp-gap,0px)) !important;}
+html.vp-gap #sidebar,html.vp-gap #main-wrap{height:auto !important;}
+/* Kenar menü rozetleri: etiketi kesmesin, kısa hap şeklinde kalsın */
+#sidebar .sidebar-item > span:not([id]){flex:1 1 auto;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+#sidebar .sidebar-item > span[id$="-badge"]{flex:0 0 auto !important;width:auto !important;max-width:none !important;min-width:20px;height:20px;padding:0 7px !important;display:inline-flex;align-items:center;justify-content:center;border-radius:999px !important;margin-left:8px !important;margin-right:4px}
+
+/* Alt eylem çubuğu: uzun etiketler taşmasın */
+.mg-actions .mg-btn{min-width:0 !important;overflow:hidden;white-space:nowrap;text-overflow:ellipsis}
+@media (max-width:480px){.mg-actions .mg-btn{font-size:14px;padding-left:10px !important;padding-right:10px !important}.mg-actions .mg-btn svg{flex:0 0 auto}}
+/* Ürün Raporları başlığı */
+#tab-stok-rapor > .rp-page-head.page-head{display:flex !important;align-items:center;gap:12px}
+#tab-stok-rapor > .rp-page-head .rp-page-title,#tab-stok-rapor > .rp-page-head .rp-page-sub{display:block !important;opacity:1 !important;visibility:visible !important}
+/* Ürün Raporları özet kartları telefonda taşmasın */
+@media (max-width:600px){
+ #tab-stok-rapor [class*="rp-kpi"] [class*="val"],#tab-stok-rapor [class*="rp-stat"] [class*="val"]{font-size:22px !important;overflow-wrap:anywhere;line-height:1.15}
+}
+/* Kart içi alanlar kart dışına taşmasın (dolgu genişliğe eklenmesin) */
+.sy-card-in{box-sizing:border-box;max-width:100%;min-width:0}
+.mg-card-body > div{min-width:0}
+/* Özet kutuları: dar telefonlarda (iPhone SE vb.) uzun tutarlar kutudan taşmasın */
+@media (max-width:420px){
+ .cl-kpi-value{font-size:clamp(15px,4.6vw,19px) !important;letter-spacing:-.01em}
+ .cl-kpi > div:last-child,.cl-kpi-body{min-width:0}
+}
+@media (max-width:380px){.cl-kpi-value{font-size:15px !important}}
 
 </style>
 <script id="erp-plus-script">
@@ -24345,7 +24373,7 @@ var satTalepler=erpLoad('erp_sa_talepler',[]),satSiparisler=erpLoad('erp_sa_sipa
 var finHesaplar=erpLoad('erp_fin_hesaplar',[]),finHareketler=erpLoad('erp_fin_hareketler',[]),finGiderler=erpLoad('erp_fin_giderler',[]),tdrOdemeler=erpLoad('erp_fin_tdr_odemeler',[]),cekSenetler=erpLoad('erp_fin_ceksenet',[]),finKurlar=erpLoad('erp_fin_kurlar',{USD:0,EUR:0,guncel:''});
 var projeler=erpLoad('erp_projeler',[]),butceKalemleri=erpLoad('erp_butce',[]),receteler=erpLoad('erp_receteler',[]),isEmirleri=erpLoad('erp_isemirleri',[]);
 var erpOnay=erpLoad('erp_onay_limitleri',{talep:true,siparis:50000,gider:10000,indirim:15});
-var satPage=1,sasPage=1,mklPage=1,fhmPage=1,gdPage=1,tobPage=1,csPage=1,pjPage=1,rcPage=1,iePage=1;
+var stlPage=1,sasPage=1,mklPage=1,fhmPage=1,gdPage=1,tobPage=1,csPage=1,pjPage=1,rcPage=1,iePage=1;
 function erpId(p){return p+'_'+Date.now().toString(36)+Math.random().toString(36).slice(2,6);}
 function erpNo(prefix,arr){var y=new Date().getFullYear(),mx=0;arr.forEach(function(x){var m=String(x.no||'').match(new RegExp('^'+prefix+'-'+y+'-(\\d+)$'));if(m)mx=Math.max(mx,+m[1]);});return prefix+'-'+y+'-'+String(mx+1).padStart(4,'0');}
 function erpUser(){return (typeof currentUser!=='undefined'&&currentUser&&currentUser.fullname)||'Yönetici';}
@@ -24354,7 +24382,7 @@ function erpKur(pb){return pb==='TRY'||!pb?1:stN(finKurlar[pb]);}
 function erpSym(pb){return {TRY:'₺',USD:'$',EUR:'€'}[pb||'TRY']||'₺';}
 function erpTL(n){return dbFmt(n)+' ₺';}
 function erpMonth(d){return String(d||'').slice(0,7);}
-var ERP_FORMS={sat:'sat-form',sas:'sas-form',mk:'mk-form',fh:'fh-form',fhr:'fhr-form',gd:'gd-form',to:'to-form',cs:'cs-form',pj:'pj-form',bt:'bt-form',rc:'rc-form',ie:'ie-form'};
+var ERP_FORMS={stl:'stl-form',sas:'sas-form',mk:'mk-form',fh:'fh-form',fhr:'fhr-form',gd:'gd-form',to:'to-form',cs:'cs-form',pj:'pj-form',bt:'bt-form',rc:'rc-form',ie:'ie-form'};
 var erpLines={},erpEdit={};
 function erpFormClose(p){stShowCard(ERP_FORMS[p],false);erpLines[p]=[];erpEdit[p]=null;if(document.getElementById(p+'-lines'))erpLineRender(p);}
 function erpSetF(p,key,v){sySet(p+'-ff-'+key,v);window[p+'Page']=1;window[p+'Render']();}
@@ -24411,46 +24439,46 @@ function erpLineRender(p){
 function erpLinesText(L){return (L||[]).map(function(l){return l.ad+' ('+stNum(l.miktar)+' '+(l.birim||'')+')';}).join(', ');}
 
 /* ============================================================ SATIN ALMA TALEPLERİ ============================================================ */
-var SAT_ST={bekliyor:['Onay Bekliyor','cl-t-beklemede'],onaylandi:['Onaylandı','cl-t-satis'],reddedildi:['Reddedildi','cl-t-red'],siparis:['Siparişe Dönüştü','cl-t-teklif']};
-var SAT_ONC={acil:['Acil','cl-t-red'],normal:['Normal','cl-t-pasif'],dusuk:['Düşük','cl-t-pasif']};
-function satSaveData(){erpPut('erp_sa_talepler',satTalepler);}
-function satNew(){erpLines.sat=[];erpEdit.sat=null;sySet('sat-f-kisi',erpUser());sySet('sat-f-gerekce','');sySet('sat-f-oncelik','normal');erpLineInit('sat');stShowCard('sat-form',true);}
-function satFromKritik(){ /* kritik stoktaki ürünlerle talep başlat */
- hdrQuickNav('tab-sa-talep');setTimeout(function(){satNew();erpLines.sat=stokUrunler.filter(function(u){return stN(u.minStok)>0&&stN(u.stok)<=stN(u.minStok);}).map(function(u){return {urunId:u.id,ad:u.ad,birim:u.birim||'Adet',miktar:Math.max(1,(stN(u.maxStok)||stN(u.minStok)*2)-stN(u.stok))};});sySet('sat-f-gerekce','Kritik stok seviyesi');erpLineRender('sat');},80);
+var STL_ST={bekliyor:['Onay Bekliyor','cl-t-beklemede'],onaylandi:['Onaylandı','cl-t-satis'],reddedildi:['Reddedildi','cl-t-red'],siparis:['Siparişe Dönüştü','cl-t-teklif']};
+var STL_ONC={acil:['Acil','cl-t-red'],normal:['Normal','cl-t-pasif'],dusuk:['Düşük','cl-t-pasif']};
+function stlSaveData(){erpPut('erp_sa_talepler',satTalepler);}
+function stlNew(){erpLines.stl=[];erpEdit.stl=null;sySet('stl-f-kisi',erpUser());sySet('stl-f-gerekce','');sySet('stl-f-oncelik','normal');erpLineInit('stl');stShowCard('stl-form',true);}
+function stlFromKritik(){ /* kritik stoktaki ürünlerle talep başlat */
+ hdrQuickNav('tab-sa-talep');setTimeout(function(){stlNew();erpLines.stl=stokUrunler.filter(function(u){return stN(u.minStok)>0&&stN(u.stok)<=stN(u.minStok);}).map(function(u){return {urunId:u.id,ad:u.ad,birim:u.birim||'Adet',miktar:Math.max(1,(stN(u.maxStok)||stN(u.minStok)*2)-stN(u.stok))};});sySet('stl-f-gerekce','Kritik stok seviyesi');erpLineRender('stl');},80);
 }
-function satSave(){
- var kisi=(syVal('sat-f-kisi')||'').trim(),L=erpLines.sat||[];
+function stlSave(){
+ var kisi=(syVal('stl-f-kisi')||'').trim(),L=erpLines.stl||[];
  if(!kisi){toast('Talep eden kişiyi girin.');return;}if(!L.length){toast('En az bir kalem ekleyin.');return;}
- var t={id:erpId('sat'),no:erpNo('ST',satTalepler),talepEden:kisi,oncelik:syVal('sat-f-oncelik')||'normal',gerekce:(syVal('sat-f-gerekce')||'').trim(),kalemler:L.map(function(l){return {urunId:l.urunId,ad:l.ad,birim:l.birim,miktar:l.miktar};}),durum:erpOnay.talep?'bekliyor':'onaylandi',created:new Date().toISOString()};
- satTalepler.unshift(t);satSaveData();
+ var t={id:erpId('stl'),no:erpNo('ST',satTalepler),talepEden:kisi,oncelik:syVal('stl-f-oncelik')||'normal',gerekce:(syVal('stl-f-gerekce')||'').trim(),kalemler:L.map(function(l){return {urunId:l.urunId,ad:l.ad,birim:l.birim,miktar:l.miktar};}),durum:erpOnay.talep?'bekliyor':'onaylandi',created:new Date().toISOString()};
+ satTalepler.unshift(t);stlSaveData();
  if(erpOnay.talep)t.approvalId=approvalCreate('sa_talep',t.id,'Satın Alma Talebi — '+t.no,t.talepEden+': '+erpLinesText(t.kalemler));
- satSaveData();erpAudit('Satın Alma Talebi Oluşturuldu',t.no,'satinalma',t.id);
- erpFormClose('sat');satRender();toast(erpOnay.talep?'Talep oluşturuldu, onaya gönderildi.':'Talep oluşturuldu.');
+ stlSaveData();erpAudit('Satın Alma Talebi Oluşturuldu',t.no,'satinalma',t.id);
+ erpFormClose('stl');stlRender();toast(erpOnay.talep?'Talep oluşturuldu, onaya gönderildi.':'Talep oluşturuldu.');
 }
-async function satDelete(id){var t=satTalepler.find(function(x){return x.id===id;});if(!t)return;
+async function stlDelete(id){var t=satTalepler.find(function(x){return x.id===id;});if(!t)return;
  if(!await uiConfirm('"'+t.no+'" talebini silmek istiyor musunuz?',{danger:true,title:'Talebi Sil',confirmLabel:'Sil'}))return;
- satTalepler=satTalepler.filter(function(x){return x.id!==id;});satSaveData();
+ satTalepler=satTalepler.filter(function(x){return x.id!==id;});stlSaveData();
  if(t.approvalId){var a=approvalRequests.find(function(r){return r.id===t.approvalId&&r.status==='bekliyor';});if(a){a.status='reddedildi';a.decisionNote='Talep silindi';approvalSave();approvalUpdateBadge();}}
- satRender();}
-function satRender(){
+ stlRender();}
+function stlRender(){
  var m=stMonth(),n=function(d){return satTalepler.filter(function(t){return t.durum===d;}).length;};
- var kel=document.getElementById('sat-kpi-grid');
+ var kel=document.getElementById('stl-kpi-grid');
  if(kel)kel.innerHTML=clKpiHtml([{l:'Onay Bekleyen',v:dbFmtInt(n('bekliyor')),s:'talep',i:ST_K.clock},{l:'Siparişe Hazır',v:dbFmtInt(n('onaylandi')),s:'talep',i:ST_K.ok},
   {l:'Siparişe Dönüşen',v:dbFmtInt(n('siparis')),s:'talep',i:ST_K.doc},{l:'Bu Ay',v:dbFmtInt(satTalepler.filter(function(t){return erpMonth(t.created)===m;}).length),s:'talep',i:ST_K.cal}]);
- var f=syVal('sat-ff-durum');
- erpChips('sat-durum-chips',[{k:'',l:'Tümü',n:satTalepler.length}].concat(Object.keys(SAT_ST).map(function(k){return {k:k,l:SAT_ST[k][0],cls:SAT_ST[k][1],n:n(k)};})),f,'sat','durum');
- sySort('sat',[{k:'new',l:'En yeni'},{k:'old',l:'En eski'},{k:'acil',l:'Önce acil'}],syVal('sat-sort')||'new',"erpSetSort.bind(null,'sat')");
- var q=syQ('sat-search'),so=syVal('sat-sort')||'new';
+ var f=syVal('stl-ff-durum');
+ erpChips('stl-durum-chips',[{k:'',l:'Tümü',n:satTalepler.length}].concat(Object.keys(STL_ST).map(function(k){return {k:k,l:STL_ST[k][0],cls:STL_ST[k][1],n:n(k)};})),f,'stl','durum');
+ sySort('stl',[{k:'new',l:'En yeni'},{k:'old',l:'En eski'},{k:'acil',l:'Önce acil'}],syVal('stl-sort')||'new',"erpSetSort.bind(null,'stl')");
+ var q=syQ('stl-search'),so=syVal('stl-sort')||'new';
  var list=satTalepler.filter(function(t){return (!f||t.durum===f)&&(!q||stHay(t.no,t.talepEden,t.gerekce,erpLinesText(t.kalemler)).indexOf(q)>-1);});
  if(so==='old')list=list.slice().reverse();if(so==='acil')list=list.slice().sort(function(a,b){return (a.oncelik==='acil'?0:1)-(b.oncelik==='acil'?0:1);});
- erpPaged('sat',list,satTalepler.length,'talep',{title:'Henüz talep yok',sub:'Stok ihtiyaçlarını satın alma talebi olarak girin.',btn:'İlk Talebi Oluştur',reset:function(){sySet('sat-search','');erpSetF('sat','durum','');},action:satNew},function(t){
+ erpPaged('stl',list,satTalepler.length,'talep',{title:'Henüz talep yok',sub:'Stok ihtiyaçlarını satın alma talebi olarak girin.',btn:'İlk Talebi Oluştur',reset:function(){sySet('stl-search','');erpSetF('stl','durum','');},action:stlNew},function(t){
   var id=stArg(t.id),acts=[];
   if(t.durum==='onaylandi')acts.push(syAct('primary',"sasFromTalep('"+id+"')",stSvg(ST_K.plus),'Siparişe Dönüştür'));
   if(t.durum==='bekliyor')acts.push(syAct('',"hdrQuickNav('tab-onaylar')",ST_IC.shield,'Onay Ekranı'));
   if(t.durum==='siparis'){var s=satSiparisler.find(function(x){return x.id===t.siparisId;});acts.push(syAct('',"hdrQuickNav('tab-sa-siparis')",ST_IC.eye,s?s.no:'Sipariş'));}
-  if(t.durum!=='siparis')acts.push(syAct('icon danger',"satDelete('"+id+"')",ST_IC.trash,'','Sil'));
+  if(t.durum!=='siparis')acts.push(syAct('icon danger',"stlDelete('"+id+"')",ST_IC.trash,'','Sil'));
   return stCard({avatarHtml:stSvg('<path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><rect x="8" y="2" width="8" height="4" rx="1"/>',1.8),avCls:'st-av-ico',
-   name:t.no,meta:[t.talepEden,stDateTr(t.created)],tags:[SAT_ST[t.durum],t.oncelik!=='normal'?SAT_ONC[t.oncelik]:null,[t.kalemler.length+' kalem','cl-t-teklif']],
+   name:t.no,meta:[t.talepEden,stDateTr(t.created)],tags:[STL_ST[t.durum],t.oncelik!=='normal'?STL_ONC[t.oncelik]:null,[t.kalemler.length+' kalem','cl-t-teklif']],
    info:[['Kalemler',erpLinesText(t.kalemler),'',true],t.gerekce?['Gerekçe',t.gerekce,'',true]:null],actions:acts});
  });
 }
@@ -24477,7 +24505,7 @@ function sasSave(){
   kalemler:L.map(function(l){return {urunId:l.urunId,ad:l.ad,birim:l.birim,miktar:l.miktar,birimFiyat:stN(l.birimFiyat),teslim:0};}),talepId:erpEdit.sas_talep||'',created:new Date().toISOString(),olusturan:erpUser()};
  var T=sasTotals(s);s.toplamTL=T.tl;s.durum=stN(erpOnay.siparis)>0&&T.tl>stN(erpOnay.siparis)?'onay':'acik';
  satSiparisler.unshift(s);
- if(s.talepId){var t=satTalepler.find(function(x){return x.id===s.talepId;});if(t){t.durum='siparis';t.siparisId=s.id;satSaveData();}}
+ if(s.talepId){var t=satTalepler.find(function(x){return x.id===s.talepId;});if(t){t.durum='siparis';t.siparisId=s.id;stlSaveData();}}
  if(s.durum==='onay')s.approvalId=approvalCreate('sa_siparis',s.id,'Satın Alma Siparişi — '+s.no+' ('+tdr+')',erpTL(T.tl)+' tutarında sipariş onayı bekleniyor.');
  sasSaveData();erpAudit('Satın Alma Siparişi Oluşturuldu',s.no+' — '+tdr,'satinalma',s.id);
  erpFormClose('sas');sasRender();toast(s.durum==='onay'?'Sipariş oluşturuldu; limit aşıldığı için onaya gönderildi.':'Sipariş oluşturuldu.');
@@ -24489,7 +24517,7 @@ async function sasDelete(id){var s=satSiparisler.find(function(x){return x.id===
  if(s.kalemler.some(function(l){return stN(l.teslim)>0;})){toast('Teslim alınmış sipariş silinemez; iptal edebilirsiniz.');return;}
  if(!await uiConfirm('"'+s.no+'" siparişi silinsin mi?',{danger:true,title:'Siparişi Sil',confirmLabel:'Sil'}))return;
  satSiparisler=satSiparisler.filter(function(x){return x.id!==id;});sasSaveData();
- if(s.talepId){var t=satTalepler.find(function(x){return x.id===s.talepId;});if(t){t.durum='onaylandi';t.siparisId='';satSaveData();}}
+ if(s.talepId){var t=satTalepler.find(function(x){return x.id===s.talepId;});if(t){t.durum='onaylandi';t.siparisId='';stlSaveData();}}
  sasRender();}
 function sasFiltered(){
  var q=syQ('sas-search'),f=syVal('sas-ff-durum'),td=syVal('sas-ff-tdr'),so=syVal('sas-sort')||'new';
@@ -24600,7 +24628,7 @@ AP_TYPE.sa_talep='Satın Alma Talebi';AP_TYPE.sa_siparis='Satın Alma Siparişi'
   if(!req)return r;
   var ok=decision==='onaylandi';
   try{
-   if(req.type==='sa_talep'){var t=satTalepler.find(function(x){return x.id===req.recordId;});if(t&&t.durum==='bekliyor'){t.durum=ok?'onaylandi':'reddedildi';satSaveData();satRender();}}
+   if(req.type==='sa_talep'){var t=satTalepler.find(function(x){return x.id===req.recordId;});if(t&&t.durum==='bekliyor'){t.durum=ok?'onaylandi':'reddedildi';stlSaveData();stlRender();}}
    if(req.type==='sa_siparis'){var s=satSiparisler.find(function(x){return x.id===req.recordId;});if(s&&s.durum==='onay'){s.durum=ok?'acik':'red';sasSaveData();sasRender();}}
    if(req.type==='indirim'&&typeof tvProposals!=='undefined'){var p=tvProposals.find(function(x){return x.id===req.recordId;});if(p&&p.indirimApprovalId===req.id){p.indirimOnay=ok?'onaylandi':'reddedildi';if(ok)p.indirimOnayliOran=p.indirimOran;tvSave();if(typeof tvRenderList==='function')tvRenderList();}}
    if(req.type==='gider'){var g=finGiderler.find(function(x){return x.id===req.recordId;});if(g&&g.durum==='onay'){g.durum=ok?'onaylandi':'red';if(ok)g.onayliTutar=g.tutar;gdSaveData();gdRender();}}
@@ -25240,7 +25268,7 @@ function ieStart(id){var e=isEmirleri.find(function(x){return x.id===id;});if(!e
 function ieShortTalep(id){
  var e=isEmirleri.find(function(x){return x.id===id;}),r=e&&receteler.find(function(x){return x.id===e.receteId;});if(!r)return;
  var ek=rcIhtiyac(r,e.miktar).filter(function(n){return n.eksik>0;});if(!ek.length){toast('Eksik hammadde yok.');return;}
- hdrQuickNav('tab-sa-talep');setTimeout(function(){satNew();erpLines.sat=ek.map(function(n){return {urunId:n.urunId,ad:n.ad,birim:n.birim||'Adet',miktar:Math.ceil(n.eksik)};});sySet('sat-f-gerekce','Üretim: '+e.no+' — '+e.mamulAd);sySet('sat-f-oncelik','acil');erpLineRender('sat');},90);}
+ hdrQuickNav('tab-sa-talep');setTimeout(function(){stlNew();erpLines.stl=ek.map(function(n){return {urunId:n.urunId,ad:n.ad,birim:n.birim||'Adet',miktar:Math.ceil(n.eksik)};});sySet('stl-f-gerekce','Üretim: '+e.no+' — '+e.mamulAd);sySet('stl-f-oncelik','acil');erpLineRender('stl');},90);}
 async function ieComplete(id){
  var e=isEmirleri.find(function(x){return x.id===id;});if(!e||e.durum==='tamamlandi'||e.durum==='iptal')return;
  var r=receteler.find(function(x){return x.id===e.receteId;});if(!r){toast('Reçete bulunamadı.');return;}
@@ -25298,7 +25326,7 @@ function ieRender(){
 
 /* ============================================================ ENTEGRASYON ============================================================ */
 /* Sayfa açılınca çizim */
-var ERP_RENDER={'tab-sa-talep':function(){satRender();},'tab-sa-siparis':function(){sasRender();},'tab-sa-malkabul':function(){mklRender();},'tab-fin-hesaplar':function(){fhRender();},'tab-fin-giderler':function(){gdRender();},
+var ERP_RENDER={'tab-sa-talep':function(){stlRender();},'tab-sa-siparis':function(){sasRender();},'tab-sa-malkabul':function(){mklRender();},'tab-fin-hesaplar':function(){fhRender();},'tab-fin-giderler':function(){gdRender();},
  'tab-fin-tedarikci':function(){tobRender();},'tab-fin-ceksenet':function(){csRender();},'tab-projeler':function(){pjRender();},'tab-butce':function(){btRender();},'tab-ur-recete':function(){rcRender();},'tab-ur-isemri':function(){ieRender();}};
 (function(){
  try{Object.assign(PAGE_PERM,{'tab-sa-talep':'stok','tab-sa-siparis':'stok','tab-sa-malkabul':'stok','tab-ur-recete':'stok','tab-ur-isemri':'stok',
@@ -25894,6 +25922,49 @@ function cdPrint(){
  }
  sync();window.addEventListener('load',sync);window.addEventListener('pageshow',sync);
  window.cdShellOn=shellOn;
+})();
+
+/* iOS standalone görünür alan açığı ölçümü */
+(function(){
+ var root=document.documentElement,ua=navigator.userAgent||'';
+ var isIOS=/iPhone|iPad|iPod/.test(ua)||(navigator.platform==='MacIntel'&&navigator.maxTouchPoints>1);
+ var standalone=window.navigator.standalone===true||(window.matchMedia&&matchMedia('(display-mode: standalone)').matches);
+ function textFocused(){var a=document.activeElement;return !!(a&&(a.tagName==='INPUT'||a.tagName==='TEXTAREA'||a.tagName==='SELECT'||a.isContentEditable));}
+ function upd(){
+  if(textFocused()||root.classList.contains('kb-open'))return;
+  var g=0;
+  if(isIOS&&standalone&&window.screen){
+   var portrait=window.innerHeight>=window.innerWidth,sh=portrait?Math.max(screen.width,screen.height):Math.min(screen.width,screen.height);
+   var d=sh-window.innerHeight;if(d>0&&d<=120)g=d;
+  }
+  root.style.setProperty('--vp-gap',g+'px');root.classList.toggle('vp-gap',g>0);
+ }
+ upd();window.addEventListener('resize',function(){setTimeout(upd,60);});window.addEventListener('orientationchange',function(){setTimeout(upd,400);});
+ window.addEventListener('pageshow',upd);document.addEventListener('visibilitychange',function(){if(!document.hidden)setTimeout(upd,100);});
+ window.cdVpGap=upd;
+})();
+
+/* Başlık yüksekliği ölçümü (kenar menü başlığın altından başlar) */
+(function(){
+ var root=document.documentElement;
+ function measure(){var tb=document.querySelector('.top-bar');if(tb&&tb.offsetHeight)root.style.setProperty('--tb-h',tb.offsetHeight+'px');}
+ measure();window.addEventListener('load',measure);window.addEventListener('resize',function(){setTimeout(measure,80);});window.addEventListener('orientationchange',function(){setTimeout(measure,400);});
+ if(window.MutationObserver)new MutationObserver(function(){if(root.classList.contains('app-shell'))setTimeout(measure,30);}).observe(root,{attributes:true,attributeFilter:['class']});
+ if(window.ResizeObserver){var tb=document.querySelector('.top-bar');if(tb)new ResizeObserver(measure).observe(tb);}
+})();
+/* Sayfa hangi yoldan açılırsa açılsın (menü, arama, geçiş animasyonu) etkin olunca çiz */
+(function(){
+ if(!window.MutationObserver||typeof ERP_RENDER==='undefined')return;
+ ERP_RENDER['tab-reports']=function(){var c=document.getElementById('rm-content');if(c&&!c.innerHTML.trim()&&typeof rmShow==='function')rmShow('musteri');};
+ var last={};
+ Object.keys(ERP_RENDER).forEach(function(id){
+  var el=document.getElementById(id);if(!el)return;
+  new MutationObserver(function(){
+   var on=el.classList.contains('active');
+   if(on&&!last[id]){last[id]=true;setTimeout(function(){if(el.classList.contains('active')){try{ERP_RENDER[id]();}catch(e){console.error('render',id,e);}}},0);}
+   if(!on)last[id]=false;
+  }).observe(el,{attributes:true,attributeFilter:['class']});
+ });
 })();
 
 
